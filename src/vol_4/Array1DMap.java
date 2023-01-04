@@ -1,3 +1,5 @@
+package vol_4;
+
 import java.util.Scanner;
 
 public class Array1DMap {

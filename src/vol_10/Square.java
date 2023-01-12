@@ -1,15 +1,18 @@
-package vol_6;
+package vol_10;
 
-public class Square {
-    float tate;
-    float yoko;
-    float takasa;
+public class Square extends Zukei{
 
-    float menseki(){
-        return this.tate * this.yoko;
+    public Square(float tate, float yoko, float takasa){
+        this.tate = tate;
+        this.yoko = yoko;
+        this.takasa = takasa;
     }
 
-    float taiseki(){
-        return this.tate * this.yoko * this.takasa;
+    @Override
+    protected float calcMenseki(){
+        float tate = this.tate;
+        float yoko = this.yoko;
+        float ans = tate * yoko;
+        return ans;
     }
 }

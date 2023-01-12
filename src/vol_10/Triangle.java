@@ -1,15 +1,19 @@
-package vol_6;
+package vol_10;
 
-public class Triangle {
-    float tate;
-    float yoko;
-    float takasa;
+public class Triangle extends Zukei{
 
-    float menseki(){
-        return this.tate * this.yoko * 0.5f;
+    public Triangle(float tate, float yoko, float takasa){
+        this.tate = tate;
+        this.yoko = yoko;
+        this.takasa = takasa;
     }
 
-    float taiseki(){
-        return this.tate * this.yoko * 0.5f * this.takasa;
+    @Override
+    protected float calcMenseki(){
+        float tate = this.tate;
+        float yoko = this.yoko;
+        float ans = tate * yoko * 0.5f;
+        return ans;
     }
+
 }
